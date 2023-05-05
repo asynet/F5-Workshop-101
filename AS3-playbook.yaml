@@ -21,3 +21,8 @@
         status_code: 200
         body_format: json
         validate_certs: no
+      register: as3_output
+
+    - name: Debug AS3 Output
+      debug:
+        msg: "My AS3 Output {{ as3_output }}"
